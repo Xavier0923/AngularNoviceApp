@@ -10,7 +10,7 @@
       <div id="ctl00_cphBody_PostList1_posts" class="posts">
 
         <!-- Article START-->
-        <app-article *ngFor="let item of data; let i=index" [item]="item"></app-article>
+        <app-article *ngFor="let item of data; let i=index" [item]="item" (delete)="deleteArticle($event)"></app-article>
         <!-- Article END-->
 
       </div>

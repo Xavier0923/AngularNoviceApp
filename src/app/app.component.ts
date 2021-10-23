@@ -25,5 +25,10 @@ export class AppComponent {
       })
   }
 
+  deleteArticle(id: number){
+    console.log("Delete Article ID : " + id);
+
+  }
+
 
 }
