@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  title = "Hello World"
+
+  constructor() {}
 
   ngOnInit(): void {
+  }
+
+  changeTilte($event: PointerEvent){
+    console.log($event);
+    if($event.ctrlKey){
+      this.title = "The Will Will Web";
+    }
+
   }
 
 }
